@@ -1,18 +1,22 @@
 html{
     background-color: #edf2c5;
-    width: 1260px;
-    height: 880px;
-    margin: auto;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+ box-sizing: inherit;
 }
 .container{
     display: flex;
+    max-width: 1260px;
+    max-height: 880px;
+    margin: auto;
 }
 .header{
     display: flex;
 }
 .header-title{
     position: absolute;
-    margin: 36px 829px 782px 160px;
+    margin: 53px 829px 782px 160px;
     width: 271px;
     height: 62px;
     font-family: Arial;
@@ -24,6 +28,9 @@ html{
     letter-spacing: normal;
     text-align: left;
     color: #778a50;
+}
+.btn-img{
+    display: flex;
 }
 .btn-img-fb-link{
     position: absolute;
@@ -68,6 +75,7 @@ html{
     text-align: left;
     color: #778a50;
     margin: auto;
+    margin-top: -6px;
 }
 .box-join{
     position: absolute;
@@ -91,6 +99,7 @@ html{
     text-align: left;
     color: #778a50;
     margin: auto;
+    margin-top: -6px;
 }
 .box-nav{
     position: absolute;
@@ -114,6 +123,8 @@ html{
 }
 .nav-list-item-link{
     text-decoration: none;
+    display: block;
+    margin-top: -8px;
 }
 .home{
     width: 51px;
@@ -184,6 +195,9 @@ html{
     text-align: left;
     color: #edf2c5;
     margin-left: 555px;
+}
+.content-area{
+    display: flex;
 }
 .pumkin{
     position: absolute;
