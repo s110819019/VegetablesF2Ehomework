@@ -2,8 +2,10 @@ html{
     background-color: #edf2c5;
     box-sizing: border-box;
 }
-*,*:before,*:after{
- box-sizing: inherit;
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
 }
 .container{
     display: flex;
@@ -13,10 +15,11 @@ html{
 }
 .header{
     display: flex;
+    position: relative;/*???*/
 }
 .header-title{
     position: absolute;
-    margin: 53px 829px 782px 160px;
+    margin: 53px 0 0 160px;/*???*/
     width: 271px;
     height: 62px;
     font-family: Arial;
@@ -34,28 +37,36 @@ html{
 }
 .btn-img-fb-link{
     position: absolute;
-    margin: 60px 335px 795px 900px;
+    /* margin: 60px 335px 795px 900px; */
+    top: 60px;
+    left: 900px;
     width: 25px;
     height: 25px;
     object-fit: contain;
 }
 .btn-img-ig-link{
     position: absolute;
-    margin: 60px 300px 795px 935px;
+    /* margin: 60px 300px 795px 935px; */
+    top: 60px;
+    left: 935px;
     width: 25px;
     height: 25px;
     object-fit: contain;
 }
 .btn-line{
     position: absolute;
-    margin: 60px 289px 795px 970px;
+    /* margin: 60px 289px 795px 970px; */
+    top: 60px;
+    left: 970px;
     width: 1px;
     height: 25px;
     background-color: #778a50;
 }
 .box-login{
     position: absolute;
-    margin: 60px 219px 795px 981px;
+    /* margin: 60px 219px 795px 981px; */
+    top: 60px;
+    left: 981px;
     width: 60px;
     height: 25px;
     border: solid 1px #778a50;
@@ -75,11 +86,14 @@ html{
     text-align: left;
     color: #778a50;
     margin: auto;
-    margin-top: -6px;
+    position: relative;/*???*/
+    top: -6px;/*???????????*/
 }
 .box-join{
     position: absolute;
-    margin: 60px 160px 795px 1051px;
+    /* margin: 60px 160px 795px 1051px; */
+    top: 60px;
+    left: 1051px;
     width: 49px;
     height: 25px;
     border: solid 1px #778a50;
@@ -99,15 +113,20 @@ html{
     text-align: left;
     color: #778a50;
     margin: auto;
-    margin-top: -6px;
+    margin-top: -6px;/*???????????*/
 }
 .box-nav{
     position: absolute;
-    margin: 103px 0 0 160px;
+    margin: 103px 0 0 160px;/*???*/
     width: 940px;
     height: 44px;
+    text-align: left;
     border-radius: 3px;
     background-color: #778a50;
+    
+}
+ul.nav-list > li{
+    float: left;
 }
 .nav-list{
     margin: 0;
@@ -115,16 +134,16 @@ html{
     display: flex;
 }
 .nav-list-item{
-    position: absolute;
-    margin-top: 10px;
-    margin-bottom: 11px;
-    margin: 10px 0 11px 0;
+    /* position: absolute;
+    margin: 10px 0 11px 0; */
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
 }
 .nav-list-item-link{
     text-decoration: none;
     display: block;
-    margin-top: -8px;
 }
 .home{
     width: 51px;
@@ -152,7 +171,7 @@ html{
     letter-spacing: normal;
     text-align: left;
     color: #edf2c5;
-    margin-left: 141px;
+    margin-left: 60px;
 }
 .vegetables{
     width: 98px;
@@ -166,7 +185,7 @@ html{
     letter-spacing: normal;
     text-align: left;
     color: #edf2c5;
-    margin-left: 281px;
+    margin-left: 60px;
 }
 .online{
     width: 56px;
@@ -180,7 +199,7 @@ html{
     letter-spacing: normal;
     text-align: left;
     color: #edf2c5;
-    margin-left: 439px;
+    margin-left: 60px;
 }
 .contact{
     width: 69px;
@@ -194,7 +213,7 @@ html{
     letter-spacing: normal;
     text-align: left;
     color: #edf2c5;
-    margin-left: 555px;
+    margin-left: 60px;
 }
 .content-area{
     display: flex;
